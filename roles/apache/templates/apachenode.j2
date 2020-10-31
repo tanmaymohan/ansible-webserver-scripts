@@ -7,4 +7,5 @@ ProxyPassReverse / http://localhost:{{ service_port }}/
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
 RewriteEngine on
+Protocols h2 http/1.1
 </VirtualHost>
