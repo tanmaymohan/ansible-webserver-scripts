@@ -36,6 +36,10 @@
         -  name: enable mod_expires
            apache2_module: 
             name: expires 
+            state: present
+        -  name: enable mod_headers
+           apache2_module: 
+            name: headers 
             state: present   
               
         - name: Turn off ServerSignatures 
